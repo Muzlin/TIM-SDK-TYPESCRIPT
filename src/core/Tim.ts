@@ -220,7 +220,7 @@ class Tim implements ITim {
       }
       return info
     } catch (error) {
-      return { code: -1, message: '获取群成员信息失败' }
+      return Promise.reject(error)
     }
   }
 
@@ -263,7 +263,7 @@ class Tim implements ITim {
       }
       return res
     } catch (error) {
-      return { code: -1, message: '发送失败' }
+      return Promise.reject(error)
     }
   }
 

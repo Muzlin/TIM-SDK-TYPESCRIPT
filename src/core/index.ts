@@ -2,7 +2,7 @@
  * @Author: lilin
  * @Date: 2020-04-25 17:56:27
  * @Last Modified by: lilin
- * @Last Modified time: 2020-05-13 16:03:33
+ * @Last Modified time: 2020-05-13 16:35:15
  * @简介: SDK
  */
 
@@ -170,7 +170,7 @@ const Tim = {
       }
       return info
     } catch (error) {
-      return { code: -1, message: '获取群成员信息失败' }
+      return Promise.reject(error)
     }
   },
 
@@ -212,7 +212,7 @@ const Tim = {
       }
       return res
     } catch (error) {
-      return { code: -1, message: '发送失败' }
+      return Promise.reject(error)
     }
   },
 
