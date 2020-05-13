@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "declaration": true,
+    "removeComments": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "target": "es5",
+    "lib": ["es2017", "dom", "ES6"],
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "strictNullChecks": true,
+    "typeRoots": ["./src/@types", "@̶t̶y̶p̶e̶s̶"]
+  },
+  "exclude": ["node_modules", "dist", "dev"]
+}
